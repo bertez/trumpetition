@@ -16,7 +16,7 @@ module.exports = (app) => {
                 layout: 'main',
                 app: 'home',
                 meta: {
-                    title: 'Aqui empezamos!'
+                    title: 'Intro'
                 }
             });
         },
