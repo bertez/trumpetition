@@ -7,7 +7,7 @@ import io from 'socket.io-client';
 
 const socket = io();
 
-document.querySelector('video').volume = 0.05;
+document.querySelector('video').volume = 0.1;
 
 // Build grid
 
