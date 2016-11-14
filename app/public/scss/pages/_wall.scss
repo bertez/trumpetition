@@ -73,9 +73,13 @@
 
         .grid {
             display: flex;
+            flex-direction: row;
             align-content: space-around;
             flex-wrap: wrap;
             position: absolute;
+            top:0;
+            left: 0;
+            height: 100vh;
 
             div {
                 height: 10vh;
