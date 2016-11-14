@@ -1,0 +1,31 @@
+.home {
+    background: #000;
+
+    .background {
+        @include full;
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+    }
+
+    .panel {
+        @include full;
+        box-sizing: border-box;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+
+        p {
+            color: #fff;
+            font-size: 6vw;
+            text-shadow: 4px 4px 0px #000;
+
+            strong {
+                color: $blue;
+            }
+        }
+    }
+}

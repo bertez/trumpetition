@@ -1,0 +1,19 @@
+.DS_Store
+node_modules
+
+#bower
+app/public/web_modules
+
+#npm errors
+npm-debug.log
+
+uploads
+dist
+logs
+
+#dev config
+config/env/dev.env.json
+yarn.lock
+
+dump.rdb
+certbot.log

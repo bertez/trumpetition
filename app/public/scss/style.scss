@@ -1,0 +1,30 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+//Modules
+@import '../../../node_modules/font-awesome/scss/font-awesome';
+@import 'utilities/normalize';
+
+$blue: #0096FF;
+$red: #EB6237;
+
+
+//Mixins
+@mixin full() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+//Pages
+@import 'pages/home';
+@import 'pages/wall';
+
+//Generic
+
+body {
+    font-family: 'Alfa Slab One', cursive;
+}

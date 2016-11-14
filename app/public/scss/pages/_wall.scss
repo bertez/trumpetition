@@ -1,0 +1,108 @@
+.wall {
+    background: #000;
+
+
+    main {
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+        z-index: 100;
+
+        .background {
+            @include full;
+            video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+
+            z-index: 0;
+
+        }
+
+        .buffer {
+            position: absolute;
+            top: 10vh;
+            padding: 2rem;
+            left: 50vw;
+            margin-left: -35vw;
+            width: 70vw;
+            color: #fff;
+            display: none;
+            font-size: 1.5vw;
+            font-family: Helvetica, 'Helvetica Neue', sans-serif;
+            box-shadow: 4px 4px 0px #000;
+
+            &.positive {
+                background: $red;
+            }
+
+            &.negative {
+                background: $blue;
+            }
+        }
+
+        .logo {
+            position: absolute;
+            color: #fff;
+            bottom: 2.7rem;
+            left: 2rem;
+            font-size: 4.8rem;
+            color: $blue;
+            text-shadow: 4px 4px 0px #000;
+
+            strong {
+                color: $red;
+            }
+        }
+
+        .credits {
+            position: absolute;
+            bottom: 0;
+            background: #000;
+            color: #fff;
+            font-family: Helvetica, sans-serif;
+            padding: .5rem;
+            font-size: .8rem;
+
+            a {
+                color: $blue;
+            }
+        }
+
+
+        .grid {
+            display: flex;
+            align-content: space-around;
+            flex-wrap: wrap;
+            position: absolute;
+
+            div {
+                height: 10vh;
+                background-size: cover;
+
+                &.fill1 {
+                    background-image: url('/static/img/brick1.jpg');
+                }
+                &.fill2 {
+                    background-image: url('/static/img/brick2.jpg');
+                }
+                &.fill3 {
+                    background-image: url('/static/img/brick3.jpg');
+                }
+                &.fill4 {
+                    background-image: url('/static/img/brick4.jpg');
+                }
+
+                &.broken1 {
+                    background-image: url('/static/img/broken1.png');
+                }
+
+                &.broken2 {
+                    background-image: url('/static/img/broken2.png');
+                }
+
+            }
+        }
+    }
+}
